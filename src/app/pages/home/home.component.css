@@ -101,3 +101,153 @@
   color: #94a3b8;
   font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    middle section    */
+
+.about-section {
+  padding: 80px 40px;
+  background: #011d4436;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.about-left {
+  flex: 1;
+}
+
+.tag {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.about-left h2 {
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.about-left h2 span {
+  color: #38bdf8;
+}
+
+.desc {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+}
+
+.small-images {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.small-images img {
+  width: 48%;
+  border-radius: 10px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stats h3 {
+  font-size: 22px;
+  color: #38bdf8;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+
+
+
+
+
+
+/*  some animation       ---------- */
+
+
+/* Background container */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Glowing circles */
+.animated-bg::before,
+.animated-bg::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: move 10s infinite alternate ease-in-out;
+}
+
+/* Blue glow */
+.animated-bg::before {
+  background: #01374e;
+  top: 10%;
+  left: 10%;
+}
+
+/* Purple glow */
+.animated-bg::after {
+  background: #164200;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* Animation */
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, -50px);
+  }
+}
