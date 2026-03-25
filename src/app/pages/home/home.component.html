@@ -1,0 +1,41 @@
+<section class="hero">
+
+  <h1>{{ title }}</h1>
+  <p>{{ subtitle }}</p>
+
+  <a routerLink="/create" class="btn">Create Your Resume</a>
+
+  <!-- Binding Example -->
+  <div class="preview-box">
+    <h3>Live Preview</h3>
+
+    <input 
+      type="text" 
+      [(ngModel)]="userName" 
+      placeholder="Enter your name"
+    >
+
+    <p>Your Resume Name: <strong>{{ userName }}</strong></p>
+  </div>
+
+</section>
+
+<section class="founder-section">
+
+  <h2>Meet the Founder</h2>
+
+  <div class="founder-card">
+    
+    <img src="founderimg.jpg" alt="Founder Photo">
+
+    <h3>Mr. Vivek Taware</h3>
+    <p class="role">Founder & Developer</p>
+
+    <p class="desc">
+      Passionate about building AI-powered solutions to simplify resume creation 
+      and help students land their dream jobs.
+    </p>
+
+  </div>
+
+</section>

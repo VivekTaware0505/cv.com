@@ -1,31 +1,79 @@
+/* Navbar container */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a;
-  padding: 15px 30px;
+
+  padding: 15px 40px;
+
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
   color: white;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+.logo span {
   color: #38bdf8;
 }
 
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
+  color: #cbd5f5;
   font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover underline animation */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #38bdf8;
   transition: 0.3s;
 }
 
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
 .nav-links li a:hover {
-  color: #38bdf8;
+  color: white;
+}
+
+/* Button */
+.actions .btn {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.actions .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(56,189,248,0.4);
 }
