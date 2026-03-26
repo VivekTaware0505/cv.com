@@ -1,0 +1,94 @@
+.footer {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+  padding: 60px 40px 20px;
+  margin-top: 80px;
+}
+
+/* GRID */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  font-size: 26px;
+}
+
+.footer-brand span {
+  color: #38bdf8;
+}
+
+.footer-brand p {
+  color: #94a3b8;
+  margin: 10px 0 20px;
+}
+
+/* SOCIAL */
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* SECTIONS */
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #38bdf8;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+.newsletter button {
+  padding: 8px 12px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #94a3b8;
+}
